@@ -2,16 +2,13 @@
 
 
 function sendMail($email, $subject, $message) {
-
-    // Ensure your key is secure. 
-    // Replace the string below with your NEW key after you delete the old one.
     $key = getenv('RESEND_API_KEY') ?: 're_YOUR_NEW_API_KEY_HERE';
 
     try {
         $resend = \Resend::client($key);
 
         $resend->emails->send([
-            'from'    => 'HostHeritage <onboarding@mail.hostheritageai.com>', 
+            'from'    => 'HostHeritage <onboarding@hostheritageai.com>', // <--- Updated domain
             'to'      => [$email],
             'subject' => $subject,
             'html'    => $message,
@@ -33,7 +30,7 @@ function sendSupportMail($email, $subject, $message, $replyTo) {
         $resend = \Resend::client($key);
 
         $resend->emails->send([
-            'from' => 'Support  <support@mail.hostheritageai.com>', 
+            'from'     => 'Support <support@hostheritageai.com>', // <--- Updated domain
             'to'       => [$email],
             'subject'  => $subject,
             'html'     => $message,
