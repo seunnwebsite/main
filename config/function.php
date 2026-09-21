@@ -11,7 +11,7 @@ function sendMail($email, $subject, $message) {
         $resend = \Resend::client($key);
 
         $resend->emails->send([
-            'from'    => 'HostHeritage <onboarding@mail.hostheritage.com>', 
+            'from'    => 'HostHeritage <onboarding@mail.hostheritageai.com>', 
             'to'      => [$email],
             'subject' => $subject,
             'html'    => $message,
