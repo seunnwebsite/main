@@ -1623,26 +1623,6 @@ PREMIUM NAVIGATION
 
         </div>
 
-        <!-- Partner Logos -->
-        <div>
-
-            <h3 class="text-3xl font-bold text-white text-center mb-12">
-                Technology & Liquidity Partners
-            </h3>
-
-            <div class="grid grid-cols-2 md:grid-cols-6 gap-8 items-center opacity-70">
-
-                <div class="text-center text-xl font-bold text-gray-500">Bloomberg</div>
-                <div class="text-center text-xl font-bold text-gray-500">Reuters</div>
-                <div class="text-center text-xl font-bold text-gray-500">MetaQuotes</div>
-                <div class="text-center text-xl font-bold text-gray-500">TradingView</div>
-                <div class="text-center text-xl font-bold text-gray-500">Binance</div>
-                <div class="text-center text-xl font-bold text-gray-500">CoinMarketCap</div>
-
-            </div>
-
-        </div>
-
     </div>
 
 </section>
