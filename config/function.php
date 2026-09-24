@@ -8,7 +8,7 @@ function sendMail($email, $subject, $message) {
         $resend = \Resend::client($key);
 
         $resend->emails->send([
-            'from'    => 'HostHeritage <onboarding@hostheritageai.com>', // <--- Updated domain
+            'from'    => 'HostHeritage <onboarding@hostheritage.top>', // <--- Updated domain
             'to'      => [$email],
             'subject' => $subject,
             'html'    => $message,
@@ -30,7 +30,7 @@ function sendSupportMail($email, $subject, $message, $replyTo) {
         $resend = \Resend::client($key);
 
         $resend->emails->send([
-            'from'     => 'Support <support@hostheritageai.com>', // <--- Updated domain
+            'from'     => 'Support <support@hostheritage.top>', // <--- Updated domain
             'to'       => [$email],
             'subject'  => $subject,
             'html'     => $message,
